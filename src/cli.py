@@ -40,8 +40,8 @@ def main():
 
     # determine series list: explicit series take precedence, otherwise use preset
     preset_lists = {
-        # employment preset: total nonfarm payrolls and unemployment rate
-        "employment": ["PAYEMS", "UNRATE"],
+        # employment preset: total nonfarm payrolls, unemployment rate, and household employment
+        "employment": ["PAYEMS", "UNRATE", "EXHOSLUSM495S"],
     }
 
     series = args.series or []
